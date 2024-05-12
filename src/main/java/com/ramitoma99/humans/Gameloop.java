@@ -1,4 +1,4 @@
-package code.ramitoma99.humans;
+package com.ramitoma99.humans;
 
 import java.util.Scanner;
 
@@ -53,6 +53,9 @@ public class Gameloop {
             case "worlds":
                 mainWorld.getWorlds();
                 break;
+            case "save humans":
+                this.saveAllHumans();
+                break;
             case "exit":
                 running = false;
                 break;
@@ -105,6 +108,21 @@ public class Gameloop {
 
         mainWorld.setPlayersOnMap();
         mainWorld.displayWorld();
+
+    }
+
+    public void saveAllHumans() {
+
+        SaveHumans saveHumans = new SaveHumans();
+
+        if (!mainWorld.humanList.isEmpty()) {
+            saveHumans.saveAllHumans(mainWorld.humanList.toArray(new Human[0]));
+            System.out.println("Humans saved!");
+        } else {
+            System.out.println("No humans to save to file!");
+        }
+
+
 
     }
 

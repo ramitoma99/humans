@@ -1,4 +1,4 @@
-package code.ramitoma99.humans;
+package com.ramitoma99.humans;
 
 import java.util.ArrayList;
 import java.util.List;

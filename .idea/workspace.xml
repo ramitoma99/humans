@@ -5,13 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4681e72-b9a3-43cb-8992-40f1f87b84eb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/code/ramitoma99/humans/Gameloop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/ramitoma99/humans/Gameloop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/code/ramitoma99/humans/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/ramitoma99/humans/World.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/code/ramitoma99/humans/Emotions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ramitoma99/humans/Emotions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/code/ramitoma99/humans/Gameloop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ramitoma99/humans/Gameloop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/code/ramitoma99/humans/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ramitoma99/humans/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/code/ramitoma99/humans/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ramitoma99/humans/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/code/ramitoma99/humans/SaveHumans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ramitoma99/humans/SaveHumans.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/code/ramitoma99/humans/SaveWorlds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ramitoma99/humans/SaveWorlds.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/code/ramitoma99/humans/Seperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ramitoma99/humans/Seperator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/code/ramitoma99/humans/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ramitoma99/humans/World.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/code/ramitoma99/humans/WorldArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ramitoma99/humans/WorldArea.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -32,14 +47,18 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Program Files/Java/json-20140107.jar",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RunManager">
     <configuration name="Humans" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="code.ramitoma99.humans.Main" />
+      <option name="MAIN_CLASS_NAME" value="com.ramitoma99.humans.Main" />
       <module name="humans" />
       <method v="2">
         <option name="Make" enabled="true" />
