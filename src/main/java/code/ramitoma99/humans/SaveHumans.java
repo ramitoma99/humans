@@ -1,29 +1,43 @@
 package code.ramitoma99.humans;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
+
+import java.io.FileWriter;
+import java.io.IOException;
 import java.lang.reflect.Field;
 
 public class SaveHumans {
 
-    public void saveHumans(Human human) {
+    public void saveAllHumans(Human[] humans) {
 
-        JSONObject obj = new JSONObject();
-        Field[] humanFields = Human.class.getDeclaredFields();
+        JSONArray jsonArray = new JSONArray();
 
-        for (Field field : humanFields) {
+        for (Human human : humans) {
 
-            try {
-                field.setAccessible(true);
-                obj.put(field.getName(), field.get(human));
+            JSONObject obj = new JSONObject();
+            Field[] humanFields = Human.class.getDeclaredFields();
 
-            } catch (IllegalAccessException e) {
-                e.printStackTrace();
+            for (Field field : humanFields) {
+
+                try {
+                    field.setAccessible(true);
+                    obj.put(field.getName(), field.get(human));
+
+                } catch (IllegalAccessException e) {
+                    e.printStackTrace();
+                }
             }
+
+            jsonArray.put(obj);
+
         }
 
-        System.out.println(obj);
-
-
+        try (FileWriter file = new FileWriter("src/main/resources/humans.json")) {
+            file.write(jsonArray.toString());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
     }
 
