@@ -5,8 +5,7 @@ import java.util.List;
 
 public class World {
 
-    int size;
-    List<Human> humanList = new ArrayList<Human>();
+    List<Human> humanList = new ArrayList<>();
     List<WorldArea[][]> worldMap = new ArrayList<>();
 
     public World() {
@@ -22,7 +21,9 @@ public class World {
                 worldArea [x][y] = new WorldArea('.');
             }
         }
+
         worldMap.add(worldArea);
+
     }
 
     public void addHuman(String name, int age, String gender, int x, int y) {
@@ -30,14 +31,6 @@ public class World {
         Human human = new Human(name, age, gender, x, y);
 
         humanList.add(human);
-
-    }
-
-    public void removeHuman(String name) {
-
-        humanList.remove(name);
-
-        System.out.println("Despawned human sexesfully!");
 
     }
 
@@ -57,8 +50,6 @@ public class World {
 
       int size = worldMap.getFirst().length;
 
-      setPlayersOnMap();
-
       for (int y = 0; y < size; y++) {
           for (int x = 0; x < size; x++) {
               System.out.print(worldMap.getFirst()[x][y].getTileContent());
@@ -73,6 +64,8 @@ public class World {
 
         for (Human human : humanList) {
 
+            System.out.println("im in the human loop");
+
             char firstInit = Character.toUpperCase(human.name.charAt(0));
 
             try {
@@ -82,10 +75,9 @@ public class World {
                 System.out.println("Error! Human is outside the map");
             }
 
-
             for (int x = 0; x < worldMap.getFirst()[0].length; x ++) {
                 for (int y = 0; y <worldMap.getFirst()[1].length; y++) {
-                    if (worldMap.getFirst()[x][y].getTileUsers() > 1 ){
+                    if (worldMap.getFirst()[x][y].getTileUsersCount() > 1 ){
                         worldMap.getFirst()[x][y].setTileContent('@');
                     }
                 }

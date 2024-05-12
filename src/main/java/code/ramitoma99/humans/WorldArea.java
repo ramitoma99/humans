@@ -3,7 +3,7 @@ package code.ramitoma99.humans;
 public class WorldArea {
 
     public char tileContent;
-    public int tileUsers = 0;
+    public int tileUsersCount = 0;
 
     public WorldArea(char new_tileContent) {
 
@@ -21,13 +21,13 @@ public class WorldArea {
 
     public void increaseTileUsers() {
 
-        this.tileUsers++;
+        this.tileUsersCount++;
 
     }
 
-    public int getTileUsers() {
+    public int getTileUsersCount() {
 
-        return tileUsers;
+        return tileUsersCount;
 
     }
 
