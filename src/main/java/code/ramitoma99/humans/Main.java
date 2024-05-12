@@ -4,11 +4,11 @@ public class Main {
   
   public static void main(String[] args){
 
-    Gameloop game1 = new Gameloop();
+    Gameloop humansGame = new Gameloop();
 
     try {
 
-      game1.showStartMenu();
+      humansGame.showStartMenu();
 
     } catch (Exception e) {
 

@@ -8,10 +8,6 @@ public class World {
     List<Human> humanList = new ArrayList<>();
     List<WorldArea[][]> worldMap = new ArrayList<>();
 
-    public World() {
-
-    }
-
         public void initializeWorldMap(int size) {
 
         WorldArea[][] worldArea = new WorldArea[size][size];
@@ -29,6 +25,8 @@ public class World {
     public void addHuman(String name, int age, String gender, int x, int y) {
 
         Human human = new Human(name, age, gender, x, y);
+
+        human.generateHumanID();
 
         humanList.add(human);
 

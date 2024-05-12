@@ -1,12 +1,17 @@
 package code.ramitoma99.humans;
 
+import java.util.UUID;
+
 public class Human {
 
     String name;
-    int age;
     String gender;
+    int age;
     int x;
     int y;
+    String humanID;
+
+
 
     public Human(String name, int age, String gender, int x, int y) {
 
@@ -18,15 +23,14 @@ public class Human {
 
     }
 
-    public void eating() {
-
-        System.out.println(this.name + "is eating nom nom nom");
-
-    }
-
     @Override public String toString() {
         return "Name: " + name + ", Age: " + age + ", Gender: " + gender + ", Position: (" + x + ", " + y + ")";
     }
 
+    public void generateHumanID () {
+
+        this.humanID = UUID.randomUUID().toString();
+
+    }
 
 }

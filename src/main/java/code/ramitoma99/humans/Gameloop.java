@@ -9,9 +9,10 @@ public class Gameloop {
 
     public void showStartMenu() {
 
+        this.showOptions();
+
         while (running) {
 
-            this.showOptions();
             this.runOption();
 
         }
